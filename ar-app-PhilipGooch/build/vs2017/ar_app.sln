@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ar_app", "ar_app.vcxproj", "{C5733C16-E744-4E3F-BF7F-337BB1EA1F78}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gef", "..\..\..\gef_abertay\build\vs2017\gef.vcxproj", "{7E80BE21-1726-40D7-850D-8DD6CD306182}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ar_vita", "..\..\ar_vita\build\vs2017\ar_vita.vcxproj", "{3487D4F2-7A74-491B-941E-BD808E0BD12F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpng", "..\..\..\gef_abertay\external\libpng\build\vs2017\libpng.vcxproj", "{A8F60D7F-3E3B-422A-A429-0AB3B613F798}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "..\..\..\gef_abertay\external\zlib\build\vs2017\zlib.vcxproj", "{E905A078-8226-4257-AD6D-89B3049A3558}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gef_vita", "..\..\..\gef_abertay\platform\vita\build\vs2017\gef_vita.vcxproj", "{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|PSVita = Debug|PSVita
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|PSVita = Release|PSVita
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5733C16-E744-4E3F-BF7F-337BB1EA1F78}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{C5733C16-E744-4E3F-BF7F-337BB1EA1F78}.Debug|PSVita.Build.0 = Debug|PSVita
+		{C5733C16-E744-4E3F-BF7F-337BB1EA1F78}.Debug|x64.ActiveCfg = Debug|PSVita
+		{C5733C16-E744-4E3F-BF7F-337BB1EA1F78}.Debug|x86.ActiveCfg = Debug|PSVita
+		{C5733C16-E744-4E3F-BF7F-337BB1EA1F78}.Release|PSVita.ActiveCfg = Release|PSVita
+		{C5733C16-E744-4E3F-BF7F-337BB1EA1F78}.Release|PSVita.Build.0 = Release|PSVita
+		{C5733C16-E744-4E3F-BF7F-337BB1EA1F78}.Release|x64.ActiveCfg = Release|PSVita
+		{C5733C16-E744-4E3F-BF7F-337BB1EA1F78}.Release|x86.ActiveCfg = Release|PSVita
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Debug|PSVita.Build.0 = Debug|PSVita
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Debug|x64.ActiveCfg = Debug|x64
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Debug|x64.Build.0 = Debug|x64
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Debug|x86.ActiveCfg = Debug|Win32
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Debug|x86.Build.0 = Debug|Win32
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Release|PSVita.ActiveCfg = Release|PSVita
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Release|PSVita.Build.0 = Release|PSVita
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Release|x64.ActiveCfg = Release|x64
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Release|x64.Build.0 = Release|x64
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Release|x86.ActiveCfg = Release|Win32
+		{7E80BE21-1726-40D7-850D-8DD6CD306182}.Release|x86.Build.0 = Release|Win32
+		{3487D4F2-7A74-491B-941E-BD808E0BD12F}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{3487D4F2-7A74-491B-941E-BD808E0BD12F}.Debug|PSVita.Build.0 = Debug|PSVita
+		{3487D4F2-7A74-491B-941E-BD808E0BD12F}.Debug|x64.ActiveCfg = Debug|PSVita
+		{3487D4F2-7A74-491B-941E-BD808E0BD12F}.Debug|x86.ActiveCfg = Debug|PSVita
+		{3487D4F2-7A74-491B-941E-BD808E0BD12F}.Release|PSVita.ActiveCfg = Release|PSVita
+		{3487D4F2-7A74-491B-941E-BD808E0BD12F}.Release|PSVita.Build.0 = Release|PSVita
+		{3487D4F2-7A74-491B-941E-BD808E0BD12F}.Release|x64.ActiveCfg = Release|PSVita
+		{3487D4F2-7A74-491B-941E-BD808E0BD12F}.Release|x86.ActiveCfg = Release|PSVita
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Debug|PSVita.Build.0 = Debug|PSVita
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Debug|x64.ActiveCfg = Debug|x64
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Debug|x64.Build.0 = Debug|x64
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Debug|x86.ActiveCfg = Debug|Win32
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Debug|x86.Build.0 = Debug|Win32
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Release|PSVita.ActiveCfg = Release|PSVita
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Release|PSVita.Build.0 = Release|PSVita
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Release|x64.ActiveCfg = Release|x64
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Release|x64.Build.0 = Release|x64
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Release|x86.ActiveCfg = Release|Win32
+		{A8F60D7F-3E3B-422A-A429-0AB3B613F798}.Release|x86.Build.0 = Release|Win32
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Debug|PSVita.Build.0 = Debug|PSVita
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Debug|x64.ActiveCfg = Debug|x64
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Debug|x64.Build.0 = Debug|x64
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Debug|x86.ActiveCfg = Debug|Win32
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Debug|x86.Build.0 = Debug|Win32
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Release|PSVita.ActiveCfg = Release|PSVita
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Release|PSVita.Build.0 = Release|PSVita
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Release|x64.ActiveCfg = Release|x64
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Release|x64.Build.0 = Release|x64
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Release|x86.ActiveCfg = Release|Win32
+		{E905A078-8226-4257-AD6D-89B3049A3558}.Release|x86.Build.0 = Release|Win32
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Debug|PSVita.ActiveCfg = Debug|PSVita
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Debug|PSVita.Build.0 = Debug|PSVita
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Debug|x64.ActiveCfg = Debug|x64
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Debug|x64.Build.0 = Debug|x64
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Debug|x86.ActiveCfg = Debug|Win32
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Debug|x86.Build.0 = Debug|Win32
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Release|PSVita.ActiveCfg = Release|PSVita
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Release|PSVita.Build.0 = Release|PSVita
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Release|x64.ActiveCfg = Release|x64
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Release|x64.Build.0 = Release|x64
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Release|x86.ActiveCfg = Release|Win32
+		{5267B110-C56D-4E93-AA8C-8FF5ECA968F2}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|PSVita">
+      <Configuration>Debug</Configuration>
+      <Platform>PSVita</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|PSVita">
+      <Configuration>Release</Configuration>
+      <Platform>PSVita</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5733C16-E744-4E3F-BF7F-337BB1EA1F78}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|PSVita'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>../../ar_vita;../../../gef_abertay</AdditionalIncludeDirectories>
+      <CppLanguageStd>Cpp11</CppLanguageStd>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lSceFios2_stub;-lSceDbg_stub;-lSceGxm_stub;-lSceDisplay_stub;-lSceCtrl_stub;-lSceSysmodule_stub;-lSceNgs_stub_weak;-lSceAudio_stub;-lSceTouch_stub;-lSceRazorCapture_stub</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|PSVita'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <OptimizationLevel>Level2</OptimizationLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>../../ar_vita;../../../gef_abertay</AdditionalIncludeDirectories>
+      <CppLanguageStd>Cpp11</CppLanguageStd>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>-lSceFios2_stub;-lSceGxm_stub;-lSceDisplay_stub;-lSceCtrl_stub;-lSceSysmodule_stub;-lSceNgs_stub_weak;-lSceAudio_stub;-lSceTouch_stub</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\gef_abertay\build\vs2017\gef.vcxproj">
+      <Project>{7e80be21-1726-40d7-850d-8dd6cd306182}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gef_abertay\external\libpng\build\vs2017\libpng.vcxproj">
+      <Project>{a8f60d7f-3e3b-422a-a429-0ab3b613f798}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gef_abertay\external\zlib\build\vs2017\zlib.vcxproj">
+      <Project>{e905a078-8226-4257-ad6d-89b3049a3558}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\gef_abertay\platform\vita\build\vs2017\gef_vita.vcxproj">
+      <Project>{5267b110-c56d-4e93-aa8c-8ff5eca968f2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ar_vita\build\vs2017\ar_vita.vcxproj">
+      <Project>{3487d4f2-7a74-491b-941e-bd808e0bd12f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ar_app.cpp" />
+    <ClCompile Include="..\..\game_state.cpp" />
+    <ClCompile Include="..\..\main_vita.cpp" />
+    <ClCompile Include="..\..\marker.cpp" />
+    <ClCompile Include="..\..\menu_state.cpp" />
+    <ClCompile Include="..\..\options_state.cpp" />
+    <ClCompile Include="..\..\primitive_builder.cpp" />
+    <ClCompile Include="..\..\state.cpp" />
+    <ClCompile Include="..\..\state_machine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\game_state.h" />
+    <ClInclude Include="..\..\marker.h" />
+    <ClInclude Include="..\..\menu_state.h" />
+    <ClInclude Include="..\..\options_state.h" />
+    <ClInclude Include="..\..\primitive_builder.h" />
+    <ClInclude Include="..\..\state.h" />
+    <ClInclude Include="..\..\state_machine.h" />
+  </ItemGroup>
+  <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
